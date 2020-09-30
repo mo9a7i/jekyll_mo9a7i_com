@@ -103,5 +103,20 @@ mark,
 audio,
 video,
 .post-title {
-  font-family: "Droid Arabic Kufi";
+    font-family: "Droid Arabic Kufi";
+}
+
+
+blockquote {
+    border-right: 0.25rem solid #e5e5e5;
+    border-left:0;
+    color: #979797;
+    margin: .8rem 0;
+    padding: .5rem 1rem;
+    }
+
+@media (min-width: 600px){
+    blockquote {
+        padding: 0 1.25rem 0 5rem;
+    }
 }
