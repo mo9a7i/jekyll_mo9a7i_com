@@ -1,0 +1,41 @@
+# Site settings
+title:          موصاحي
+description:    "تمتع بلحسات المخ الخنفشارية"
+baseurl:        ""
+url:            "http://127.0.0.1:4000/"
+
+# Google Analytics
+# google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         Mohannad F. Otaibi
+  url:          https://mohannadotaibi.com
+  email:        mohannad.otaibi@gmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+disqus:         mo9a7i
