@@ -103,29 +103,35 @@ mark,
 audio,
 video,
 .post-title {
-    font-family: "Droid Arabic Kufi";
+  font-family: "Droid Arabic Kufi";
 }
-
 
 blockquote {
-    border-right: 0.25rem solid #e5e5e5;
-    border-left:0;
-    color: #979797;
-    margin: .8rem 0;
-    padding: .5rem 1rem;
-    }
-
-@media (min-width: 600px){
-    blockquote {
-        padding: 0 1.25rem 0 5rem;
-    }
-    .nav-container {
-        text-align: right;
-    }
-
-    .nav ul {
-        right: auto;
-        left:0;
-    }
+  border-right: 0.25rem solid #e5e5e5;
+  border-left: 0;
+  color: #979797;
+  margin: 0.8rem 0;
+  padding: 0.5rem 1rem;
 }
 
+.nav li {
+  padding: 0 0 0 2rem;
+}
+
+.nav li:last-child {
+  padding-left: 0;
+}
+
+@media (min-width: 600px) {
+  blockquote {
+    padding: 0 1.25rem 0 5rem;
+  }
+  .nav-container {
+    text-align: right;
+  }
+
+  .nav ul {
+    right: auto;
+    left: 0;
+  }
+}
