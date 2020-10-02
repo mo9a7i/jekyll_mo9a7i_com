@@ -3,7 +3,6 @@ title: iBlueNova يعيد حياة البلوتوث للآيفون
 date: 2010-02-15T23:28:17+03:00
 author: Mo9a7i
 layout: post
-permalink: '/2010/ibluenova-%d9%8a%d8%b9%d9%8a%d8%af-%d8%ad%d9%8a%d8%a7%d8%a9-%d8%a7%d9%84%d8%a8%d9%84%d9%88%d8%aa%d9%88%d8%ab-%d9%84%d9%84%d8%a2%d9%8a%d9%81%d9%88%d9%86/'
 tags:
   - iBlueNova
   - iphone

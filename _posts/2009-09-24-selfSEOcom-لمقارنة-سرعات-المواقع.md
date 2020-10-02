@@ -3,7 +3,6 @@ title: selfSEO.com لمقارنة سرعات المواقع
 date: 2009-09-24T14:29:34+03:00
 author: Mo9a7i
 layout: post
-permalink: '/2009/selfseo-com-%d9%84%d9%85%d9%82%d8%a7%d8%b1%d9%86%d8%a9-%d8%b3%d8%b1%d8%b9%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d9%88%d8%a7%d9%82%d8%b9/'
 tags:
   - الطبقات الصلبة
   - سرعة
