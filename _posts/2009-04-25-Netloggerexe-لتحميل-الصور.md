@@ -1,11 +1,8 @@
 ---
-id: 16
 title: Netlogger.exe لتحميل الصور
 date: 2009-04-25T03:20:48+03:00
 author: Mo9a7i
 layout: post
-guid: http://mo9a7i.com/?p=16
-permalink: '/2009/netloggerexe-%d9%84%d8%aa%d8%ad%d9%85%d9%8a%d9%84-%d8%a7%d9%84%d8%b5%d9%88%d8%b1/'
 tags:
   - 'c#'
   - netlog
