@@ -5,7 +5,8 @@ baseurl:        ""
 url:            "http://mo9a7i.com/"
 
 # Google Analytics
-# google_analytics: UA—XXXXXXXX-X
+google_analytics: UA-19560189-3
+
 
 # Author
 author:
