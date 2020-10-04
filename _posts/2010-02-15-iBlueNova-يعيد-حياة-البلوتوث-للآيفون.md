@@ -4,7 +4,6 @@ date: 2010-02-15T23:28:17+03:00
 author: Mo9a7i
 layout: post
 tags:
-  - iBlueNova
   - iphone
   - تقنية
 ---

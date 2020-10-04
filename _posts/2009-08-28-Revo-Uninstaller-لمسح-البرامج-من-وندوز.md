@@ -27,11 +27,11 @@ tags:
 
 بعد تحميل البرنامج تفكون الضغط طبعاً وبيطلع لكم التالي , واللي يهمنا بالموضوع هو المحدد بالأحمر
 
-![x](/assets/files/assets/files/2009/08/revo2.png)
+![x](/assets/files/2009/08/revo2.png)
 
 هذي واجهة البرنامج
 
-![x](/assets/files/assets/files/2009/08/revo3.png)
+![x](/assets/files/2009/08/revo3.png)
 
 إذا كان جهازكم وندوز , قد يطلب منكم البرنامج إعطاءه صلاحيات ( عطوه عطوووه لا تردونه خلوه يتدلع )
 
@@ -43,7 +43,7 @@ tags:
 
 بعد الضغط عالزر بيطلع لنا التالي:
 
-![x](/assets/files/assets/files/2009/08/revo4.png)
+![x](/assets/files/2009/08/revo4.png)
 
 ياعيني عالأدب
 
@@ -53,7 +53,7 @@ tags:
 
 بيطلع لكم زي اللي بالصورة هذي
 
-![x](/assets/files/assets/files/2009/08/revo5.png)
+![x](/assets/files/2009/08/revo5.png)
 
 أنا شخصياً اختار اللي بالأحمر
 
@@ -66,13 +66,13 @@ tags:
 
 بيطلع لنا كذا
 
-![x](/assets/files/assets/files/2009/08/revo6.png)
+![x](/assets/files/2009/08/revo6.png)
 
 هذي أول خطوة اللي هي بيشغل لك الملف التنفيذي العادي اللي يمسح البرنامج بشكل عادي, طبعاً طقوا يس وكملوا الخطوات بشكل طبيعي كأنكم تمسحونه من وندوز
 
 بعد ماتنتهون طقوا نكست بيطلع كذا:
 
-![x](/assets/files/assets/files/2009/08/revo7.png)
+![x](/assets/files/2009/08/revo7.png)
 
 لما يخلص طقوا نكست زي اللي بالصورة السابقة
 
@@ -80,7 +80,7 @@ tags:
 
 طقوا Select All , بعدين Delete بعدين بيسألكم متأكدين طقوا yes بعدين Next
 
-![x](/assets/files/assets/files/2009/08/revo8.png)
+![x](/assets/files/2009/08/revo8.png)
 
 بعد هالخطوة ممكن يجيب لكم الملفات إن كان باقي ملفات بالجهاز
 
@@ -88,7 +88,7 @@ tags:
 
 في الأخير بيطلع لكم كذا
 
-![x](/assets/files/assets/files/2009/08/revo9.png)
+![x](/assets/files/2009/08/revo9.png)
 
 طقوا Finish وإنتهينا
 

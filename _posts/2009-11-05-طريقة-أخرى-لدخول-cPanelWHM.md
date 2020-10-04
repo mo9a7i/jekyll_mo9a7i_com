@@ -6,8 +6,7 @@ layout: post
 Thumbnail:
   - http://www.mo9a7i.com/assets/files/2009/10/cpanel.png
 tags:
-  - cpanel
-  - whm
+  - cpanel/whm
   - حماية
   - تقنية
 ---

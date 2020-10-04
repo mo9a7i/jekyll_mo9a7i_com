@@ -4,7 +4,6 @@ date: 2010-06-15T09:16:50+03:00
 author: Mo9a7i
 layout: post
 tags:
-  - connect
   - facebook connect
   - تقنية
 ---

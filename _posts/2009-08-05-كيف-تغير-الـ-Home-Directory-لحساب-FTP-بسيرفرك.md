@@ -3,9 +3,6 @@ title: كيف تغير الـ Home Directory لحساب FTP بسيرفرك
 date: 2009-08-05T21:31:12+03:00
 author: Mo9a7i
 layout: post
-categories:
-  - برمجيات
-  - سواليف
 tags:
   - تقنية
   - حماية
