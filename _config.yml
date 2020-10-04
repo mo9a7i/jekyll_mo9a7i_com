@@ -3,6 +3,7 @@ title:          موصاحي
 description:    "تمتع بلحسات المخ الخنفشارية"
 baseurl:        ""
 url:            "http://mo9a7i.com/"
+rtl: true
 
 # Google Analytics
 google_analytics: UA-19560189-3
