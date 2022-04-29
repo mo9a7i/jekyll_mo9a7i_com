@@ -1,6 +1,6 @@
 # Site settings
 title:          موصاحي
-description:    "تمتع بلحسات المخ الخنفشارية"
+description:    "مدونة غير رسمية، تمتع بلحسات المخ الخنفشارية بالنكهةالتقنية"
 baseurl:        ""
 url:            "http://www.mo9a7i.com/"
 rtl: true
@@ -10,10 +10,21 @@ google_analytics: UA-19560189-3
 
 # Author
 author:
-  name:         موصاحي
+  name: موصاحي
   url:          https://mo9a7i.com
   email:        mohannad.otaibi@gmail.com
-  twitter:      bufai7an
+  twitter: bufai7an
+twitter:
+  username: bufai7an
+  card: summary_large_image
+social:
+  name: bufai7an
+  links:
+    - https://twitter.com/bufai7an
+    - https://www.linkedin.com/in/mohannad.otaibi
+    - https://github.com/mo9a7i
+
+timezone: Asia/Riyadh
 
 # Build settings
 markdown:       kramdown
