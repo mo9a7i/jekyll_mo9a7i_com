@@ -2,7 +2,7 @@
 title:          موصاحي
 description:    "تمتع بلحسات المخ الخنفشارية"
 baseurl:        ""
-url:            "http://mo9a7i.com/"
+url:            "http://www.mo9a7i.com/"
 rtl: true
 
 # Google Analytics
@@ -13,6 +13,7 @@ author:
   name:         موصاحي
   url:          https://mo9a7i.com
   email:        mohannad.otaibi@gmail.com
+  twitter:      bufai7an
 
 # Build settings
 markdown:       kramdown
@@ -33,7 +34,7 @@ plugins:
 
 # Permalinks
 permalink:      /:year/:title
-paginate:       20
+paginate:       40
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
