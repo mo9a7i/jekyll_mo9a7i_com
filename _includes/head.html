@@ -16,7 +16,10 @@
       صفحة {{ paginator.page }} من {{ paginator.total_pages }} - 
     {% endif %}
     
-    {{ site.name | escape }}{% unless page.tag or page.title %} - {{ site.description | escape }}{% endunless %}
+    {{ site.name | escape }}
+    {% unless page.tag or page.title %}
+       - {{ site.description | escape }}
+    {% endunless %}
   </title>
 
   <!-- CSS -->
