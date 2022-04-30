@@ -1,6 +1,6 @@
 # Site settings
-title:          موصاحي
-description:    "مدونة غير رسمية، تمتع بلحسات المخ الخنفشارية بالنكهةالتقنية"
+title:          "موصاحي"
+description:    "مدونة غير رسمية، تمتع بلحسات المخ الخنفشارية بالنكهة التقنية"
 baseurl:        ""
 url:            "http://www.mo9a7i.com/"
 rtl: true
