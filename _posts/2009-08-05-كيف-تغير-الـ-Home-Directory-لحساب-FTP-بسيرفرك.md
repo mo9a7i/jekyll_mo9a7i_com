@@ -38,7 +38,7 @@ tags:
 
 طبعاً أنا برنامج الإف تي بي على سيرفري هو `pure-ftpd`
 
-حاولت وبحثت وقرأت, لقيت حاجات كثير وحلول معقدة وزحمة لكن عن طريق الصدفة طحت على هالموقع <http://blog.raamdev.com/2006/09/20/howto-change-home-directory-for-a-virtual-ftp-user-on-a-server-running-pure-ftpd>
+حاولت وبحثت وقرأت, لقيت حاجات كثير وحلول معقدة وزحمة لكن عن طريق الصدفة طحت على هالموقع <https://blog.raamdev.com/2006/09/20/howto-change-home-directory-for-a-virtual-ftp-user-on-a-server-running-pure-ftpd>
 
 ## ملاحظة: هذا هو السطر الكبير حق اللي مايحبون الكلام الكثير
 

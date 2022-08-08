@@ -20,17 +20,17 @@ tags:
 * <https://cpanel.domain.com>
 * <https://domain.com/cpanel>
 * <https://domain.com:2083>
-* <http://domain.com/cpanel>
-* <http://cpanel.domain.com>
-* <http://domain.com:2082>
+* <https://domain.com/cpanel>
+* <https://cpanel.domain.com>
+* <https://domain.com:2082>
 
 ## لدخول الـWHM صفحة الروت
 
 * <https://domain.com/whm>
 * <https://whm.domain.com>
 * <https://domain.com:2087>
-* <http://domain.com/whm>
-* <http://whm.domain.com>
-* <http://domain.com:2086>
+* <https://domain.com/whm>
+* <https://whm.domain.com>
+* <https://domain.com:2086>
 
 أتمنى هالمعلومة تفيد بعضكم

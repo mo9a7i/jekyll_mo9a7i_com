@@ -21,7 +21,7 @@ tags:
 
 من أحد هذه المواقع والذي يقدم الخدمة بشكل مجاني هو
 
-[Selfseo.com](http://www.selfseo.com/website_speed_test.php)
+[Selfseo.com](https://www.selfseo.com/website_speed_test.php)
   
 عند فتح الصفحة , سيظهر صندوق كبير
 
