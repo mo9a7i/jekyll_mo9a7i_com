@@ -23,7 +23,7 @@ tags:
 
 البرنامج إسمه
 
-### [Revo Uninstaller](http://www.revouninstaller.com/)
+### [Revo Uninstaller](https://www.revouninstaller.com/)
 
 بعد تحميل البرنامج تفكون الضغط طبعاً وبيطلع لكم التالي , واللي يهمنا بالموضوع هو المحدد بالأحمر
 
