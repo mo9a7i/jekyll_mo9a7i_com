@@ -4,7 +4,7 @@ date: 2009-11-05T21:10:27+03:00
 author: Mo9a7i
 layout: post
 Thumbnail:
-  - https://www.mo9a7i.com/assets/files/2009/10/cpanel.png
+  - https://mo9a7i.com/assets/files/2009/10/cpanel.png
 tags:
   - تقنية
 ---
