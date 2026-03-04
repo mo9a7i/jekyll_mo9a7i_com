@@ -6,3 +6,4 @@ _site
 Gemfile.lock
 .jekyll-cache
 _posts/*.html
+_config_local.yml

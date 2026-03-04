@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
-  max-width: 800px;
-  width: 80%;
+  max-width: 960px;
+  width: 88%;
 }
 
 main,
@@ -9,11 +9,38 @@ footer,
 .nav-container {
   display: block;
   margin: 0 auto;
-  max-width: 800px;
-  width: 80%;
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 88%;
+}
+
+main {
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+  }
+
+  main,
+  footer,
+  .nav-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .nav {
+  background: $white;
   box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
 

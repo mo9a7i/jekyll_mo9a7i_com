@@ -20,7 +20,7 @@ layout: default
   {% if page.tags %}
   <div class="tags-clouds post-tags">
     {% for tag in page.tags %}
-    <a href="{{ site.baseurl }}/تصنيفات#{{ tag }}">{{ tag }}</a>
+    <a href="{{ '/تصنيفات' | relative_url }}#{{ tag }}">{{ tag }}</a>
     {% endfor %}
   </div>
   {% endif %}
@@ -34,13 +34,20 @@ layout: default
   {% include disqus_comments.html %}
 {% endif %}
 
-<div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
+<div class="pagination" dir="ltr">
+  <div class="pagination-end pagination-end--left">
+    {% if page.next.url %}
+      <a href="{{ page.next.url | relative_url }}" class="pagination-arrow pagination-arrow--prev" aria-label="التدوينة التالية">&#8592;</a>
+    {% endif %}
+  </div>
 
-  <a href="#" class="top">Top</a>
+  <div class="pagination-end pagination-end--center">
+    <a href="#" class="top">Top</a>
+  </div>
+
+  <div class="pagination-end pagination-end--right">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | relative_url }}" class="pagination-arrow pagination-arrow--next" aria-label="التدوينة السابقة">&#8594;</a>
+    {% endif %}
+  </div>
 </div>

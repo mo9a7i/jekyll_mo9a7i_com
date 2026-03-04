@@ -1,12 +1,12 @@
 <nav class="nav">
   <div class="nav-container">
-    <a href="{{ site.baseurl }}/">
+    <a href="{{ '/' | relative_url }}">
       <h2 class="nav-title">{{ site.title }}</h2>
     </a>
     <ul>
-      <li><a href="{{ site.baseurl }}/">تدوينات</a></li>
-      <li><a href="{{ '/تصنيفات' | prepend: site.baseurl }}">تصنيفات</a></li>
-      <li><a href="{{ '/عني' | prepend: site.baseurl }}">عني</a></li>
+      <li><a href="{{ '/' | relative_url }}">تدوينات</a></li>
+      <li><a href="{{ '/تصنيفات' | relative_url }}">تصنيفات</a></li>
+      <li><a href="{{ '/عني' | relative_url }}">عني</a></li>
     </ul>
   </div>
 </nav>

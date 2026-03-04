@@ -1,44 +1,101 @@
 .pagination {
-  border-top: .5px solid $grey-2;
-  font-family: $serif-secondary;
-  padding-top: 2rem;
-  position: relative;
-  text-align: center;
+  align-items: center;
+  background: $white;
+  border-radius: 999px;
+  box-shadow: 0 1px 3px $card-shadow;
+  display: grid;
+  font-family: $sans-serif;
+  grid-template-columns: 1fr auto 1fr;
+  margin-top: 2rem;
+  padding: 0.5rem 0.75rem;
+}
 
-  span {
+.pagination-end {
+  align-items: center;
+  display: flex;
+  min-width: 2rem;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+}
+
+.pagination-numbers {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.pagination-num {
+  @include transition(background .2s ease, color .2s ease);
+  align-items: center;
+  border-radius: 50%;
+  color: $default-color;
+  display: inline-flex;
+  font-size: 0.95rem;
+  height: 2rem;
+  justify-content: center;
+  min-width: 2rem;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: $grey-3;
     color: $default-shade;
-    font-size: 1.1rem;
   }
 
-  .top {
-    @include transition(all .3s ease-out);
-    color: $default-color;
-    font-family: $sans-serif;
-    font-size: 1.1rem;
-    opacity: .6;
+  &--current {
+    background: $default-shade;
+    color: $white;
+    font-weight: 600;
+  }
+}
 
-    &:hover {
-      opacity: 1;
-    }
+.pagination-arrow {
+  @include transition(background .2s ease, color .2s ease);
+  align-items: center;
+  border-radius: 50%;
+  color: $default-color;
+  display: inline-flex;
+  font-size: 1.1rem;
+  height: 2rem;
+  justify-content: center;
+  min-width: 2rem;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: $grey-3;
+    color: $default-shade;
+    text-decoration: none;
   }
 
-  .arrow {
-    @include transition(all .3s ease-out);
-    color: $default-color;
-    position: absolute;
-
-    &:hover,
-    &:focus {
-      opacity: .6;
-      text-decoration: none;
-    }
+  &--prev {
+    margin-inline-end: 0.25rem;
   }
 
-  .left {
-    left: 0;
+  &--next {
+    margin-inline-start: 0.25rem;
   }
+}
 
-  .right {
-    right: 0;
+.pagination .top {
+  @include transition(all .3s ease-out);
+  color: $default-color;
+  font-size: 1.1rem;
+  opacity: .6;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 1;
   }
 }

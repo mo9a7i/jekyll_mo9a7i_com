@@ -1,5 +1,14 @@
 .post {
-  padding: 3rem 0;
+  background: $white;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 3px $card-shadow;
+  margin: 0 auto 2rem;
+  padding: 2.5rem 2rem 3rem;
+
+  @media (max-width: 599px) {
+    padding: 1.25rem 1rem 2rem;
+    margin-bottom: 1.5rem;
+  }
 
   &-info {
     color: $default-tint;

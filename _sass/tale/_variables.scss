@@ -8,12 +8,14 @@ $grey-3: #f9f9f9 !default;
 $white: #fff !default;
 $blue: #4a9ae1 !default;
 $shadow-color: rgba(0, 0, 0, .2) !default;
+$card-shadow: rgba(0, 0, 0, .08) !default;
+$page-bg: #f7f7f7 !default;
 $code-color: #bf616a !default;
 
 // Fonts
-$serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
-$sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
+$serif-primary: 'Noto Sans Arabic', sans-serif !default;
+$serif-secondary: 'Noto Sans Arabic', sans-serif !default;
+$sans-serif: 'Noto Sans Arabic', sans-serif !default;
 $monospaced: Menlo, Monaco, monospace !default;
 
 @mixin box-sizing($type: border-box) {

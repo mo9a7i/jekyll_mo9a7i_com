@@ -4,7 +4,68 @@ layout: default
 
 <div class="catalogue">
   {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+    {% comment %} Resolve first media: image or embed (e.g. YouTube). Prefer first in document order. {% endcomment %}
+    {% assign content_lower = post.content | downcase %}
+    {% assign before_img = content_lower | split: '<img' | first %}
+    {% assign before_iframe = content_lower | split: '<iframe' | first %}
+    {% assign pos_img = before_img | size %}
+    {% assign pos_iframe = before_iframe | size %}
+    {% assign first_media_url = '' %}
+    {% assign first_media_is_youtube = false %}
+    {% assign first_media_youtube_id = '' %}
+
+    {% if pos_img < pos_iframe %}
+      {% comment %} First media is an image {% endcomment %}
+      {% assign img_block = post.content | split: '<img' %}
+      {% if img_block.size > 1 %}
+        {% assign block = img_block[1] %}
+        {% assign src_double = block | split: 'src="' %}
+        {% if src_double.size > 1 %}
+          {% assign first_media_url = src_double[1] | split: '"' | first %}
+        {% else %}
+          {% assign src_single = block | split: "src='" %}
+          {% if src_single.size > 1 %}
+            {% assign first_media_url = src_single[1] | split: "'" | first %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% else %}
+      {% comment %} First media is iframe (or none) {% endcomment %}
+      {% assign iframe_parts = post.content | split: '<iframe' %}
+      {% if iframe_parts.size > 1 %}
+        {% assign block = iframe_parts[1] %}
+        {% assign src_double = block | split: 'src="' %}
+        {% if src_double.size > 1 %}
+          {% assign first_media_url = src_double[1] | split: '"' | first %}
+        {% else %}
+          {% assign src_single = block | split: "src='" %}
+          {% if src_single.size > 1 %}
+            {% assign first_media_url = src_single[1] | split: "'" | first %}
+          {% endif %}
+        {% endif %}
+        {% if first_media_url contains 'youtube.com/embed/' or first_media_url contains 'youtu.be/' %}
+          {% assign first_media_is_youtube = true %}
+          {% if first_media_url contains 'youtube.com/embed/' %}
+            {% assign yid = first_media_url | split: 'youtube.com/embed/' | last | split: '?' | first | split: '&' | first | split: '"' | first %}
+          {% else %}
+            {% assign yid = first_media_url | split: 'youtu.be/' | last | split: '?' | first | split: '&' | first %}
+          {% endif %}
+          {% assign first_media_youtube_id = yid %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+
+    {% comment %} Fallback: front matter youtubeId when no img/iframe found {% endcomment %}
+    {% if first_media_url == '' and post.youtubeId %}
+      {% assign first_media_is_youtube = true %}
+      {% assign first_media_youtube_id = post.youtubeId %}
+    {% endif %}
+
+    {% if first_media_is_youtube and first_media_youtube_id != '' %}
+      {% assign first_media_url = 'https://img.youtube.com/vi/' | append: first_media_youtube_id | append: '/mqdefault.jpg' %}
+    {% endif %}
+
+    <a href="{{ post.url | relative_url }}" class="catalogue-item">
       <div>
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
@@ -14,18 +75,43 @@ layout: default
           {{ post.content | strip_html | truncatewords: 30 }}
         </p>
 
+        {% if first_media_url != '' %}
+        <div class="catalogue-media{% if first_media_is_youtube %} catalogue-media--video{% endif %}">
+          {% if first_media_url contains 'http' %}
+            <img src="{{ first_media_url }}" alt="" loading="lazy" />
+          {% else %}
+            <img src="{{ first_media_url | relative_url }}" alt="" loading="lazy" />
+          {% endif %}
+        </div>
+        {% endif %}
       </div>
     </a>
   {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
+<div class="pagination" dir="ltr">
+  <div class="pagination-end pagination-end--left">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-arrow pagination-arrow--prev" aria-label="الصفحة السابقة">&#8592;</a>
+    {% endif %}
+  </div>
 
-  <span>{{ paginator.page }}</span>
+  <nav class="pagination-numbers" aria-label="ترقيم الصفحات">
+    {% for i in (1..paginator.total_pages) %}
+      {% if i == paginator.page %}
+        <span class="pagination-num pagination-num--current" aria-current="page">{{ i }}</span>
+      {% elsif i == 1 %}
+        <a href="{{ '/' | relative_url }}" class="pagination-num">{{ i }}</a>
+      {% else %}
+        {% assign page_path = 'page' | append: i | prepend: '/' | append: '/' %}
+        <a href="{{ page_path | relative_url }}" class="pagination-num">{{ i }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+  <div class="pagination-end pagination-end--right">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-arrow pagination-arrow--next" aria-label="الصفحة التالية">&#8594;</a>
+    {% endif %}
+  </div>
 </div>
